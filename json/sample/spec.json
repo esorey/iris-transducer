@@ -1,0 +1,16 @@
+[
+    {
+        "operation": "shift",
+        "spec": {
+            "rating": {
+                "primary": {
+                    "value": "Rating"
+                },
+                "*": {
+                    "value": "SecondaryRatings.&1.Value",
+                    "$": "SecondaryRatings.&.Id"
+                }
+            }
+        }
+    }
+]
